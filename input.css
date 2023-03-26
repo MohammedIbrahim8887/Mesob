@@ -1,0 +1,77 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    color:#2e2e2e;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.amh-text{
+    font-family: 'Noto Sans Ethiopic', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    background-color: #FF9E00;
+}
+
+.yellow-text{
+    color: #FF9E00;
+}
+
+.order-btn{
+    background-color: #FF9E00;
+}
+
+.btn-text{
+    color:#fff;
+}
+
+.type{
+    background-color: #FF9E00;
+}
+
+.card{
+    background-color: #fff;
+    filter: drop-shadow(0px 4px 20px rgba(46,46,46,0.11));
+    /* justify-content: center;
+    align-items: center; */
+}
+.food-img{
+    opacity:0.95;
+}
+.food-img:hover{
+    opacity: 1;
+    transition: 1s;
+}
+
+#product-container{
+    overflow:scroll;
+    scroll-snap-type: x mandatory;
+}
+
+#product-container::-webkit-scrollbar {
+    display: none;
+  }
+
+.person{
+    background-color: #fff;
+    filter: drop-shadow(0px 4px 20px rgba(46,46,46,0.11));
+    justify-content: center;
+    align-items: center;
+}
+.input-box{
+    background-color: rgba(255, 158, 0, 0.1);
+    outline:none;
+}
+/*Mobile Version*/
+.nav-modal{
+    background-color: #fff;
+    filter: drop-shadow(0px 4px 20px rgba(46,46,46,0.11));
+}

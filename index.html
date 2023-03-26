@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesob</title>
+    <link rel="stylesheet" href="css/main.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <div class="relative">
+        <header class="flex py-2 fixed z-50 top-0 left-0 right-0 md:justify-center backdrop-filter backdrop-blur-lg bg-opacity-80 border-b border-gray-200">
+            <nav class="">
+                <ul class="max-md:hidden flex flex-row gap-16 justify-center">
+                    <li class="flex self-center text-lg"><a href="#">Home</a></li>
+                    <li class="flex self-center text-lg"><a href="#">About</a></li>
+                    <li class="flex self-center text-lg"><a href="#"><img src="assets/Logo.svg"></a></li>
+                    <li class="flex self-center text-lg"><a href="#">Product</a></li>
+                    <li class="flex self-center text-lg"><a href="#">Contact</a></li>
+                </ul>
+                <!--Mobile version-->
+                <div class="md:hidden flex flex-row mx-6">
+                    <img src="assets/Logo.svg" class="w-1/2">
+                    <button id="menu-btn" class="block self-center ml-32 hamburger lg:hidden focus:outline-none">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                        </button>
+                </div>
+            </nav>
+    </div>
+    
+    <!--End of Navigation Bar-->
+
+    <!--Call To Action-->
+    <div class="md:flex flex-row mr-4 ml-20 justify-evenly gap-44 mt-32 max-md:mx-2 max-md:mt-24" id="CTA">
+        <div class="md:flex flex-col gap-6 justify-center max-w-2xl max-md:flex gap-10" id="left-side-CTA">
+            <div class="md:text-5xl font-bold relative leading-[4rem] max-md:text-2xl max-md:text-center"id="large-text-CTA">
+                <p>Bringing <span class="yellow-text">Ethiopian Cuisine</span>
+                    <img src="assets/Line.svg" class="md:absolute md:right-24 max-md:absolute max-md:w-1/2 max-md:right-12"> <br>to your Doorstep</p>
+            </div>
+            <div class="flex max-md:justify-center">
+                <img src="assets/Packaging.svg" class="md:hidden max-md:w-3/4 max-md:justify-center">
+            </div>
+            <div class="flex text-justify opacity-50 font-normal text-lg max-md:text-sm max-md:mx-4"id="small-text-CTA">Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.
+                                     Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. 
+                                     Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. 
+                                     Curabitur pellentesque nibh nibh, at maximus ante.</div>
+            <div class="btn md:flex w-36 px-7 py-4 font-medium color-white rounded-lg max-md:m-auto"><p class="btn-text flex justify-center">Learn More</p></div>
+        </div>
+        <div class="max-md:hidden" id="right-side-CTA"><img src="assets/Packaging.svg" class="w-8/12"></div>
+    </div>
+    <!--End of Call To Action-->
+
+    <!--About-->
+    <div class="flex flex-col" id="about">
+        <!--Title-->
+        <div class="flex justify-center mt-20 " id="about-title">
+            <p class="md:text-5xl font-semibold max-md:text-2xl">What Makes Us <span class="yellow-text">Different</span></p>
+        </div>
+        <!--Sub Text-->
+        <div class="md:flex justify-center mt-6 opacity-75 max-md:mx-6 text-center"id="about-small-text">
+            <p>Providing a <span class="yellow-text">variety</span> of culinary delights and making each mouthful <span class="yellow-text">unique</span></p>
+        </div>
+        <!--About us Containers-->
+        <div class="md:grid grid-cols-3 gap-4 mx-20 mt-20 max-md:mx-6 mt-12" id="about-us-containers">
+            <!--Packaging-->
+            <div class="speciality flex flex-row gap-4 mb-10" id="packaging">
+                <div id="packaging-img"><img src="assets/packaging-img.svg"></div>
+                <div class="about-us-text flex flex-col gap-4">
+                    <div class="about-us-main-text text-xl font-medium">Best Packaging</div>
+                    <div class="about-us-sub-text md:w-3/4 opacity-50 text-sm text-justify">
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipiscing elit Ut et massa mi. 
+                        Aliquam in hendrerit urna.</div>
+                </div>
+            </div>
+            <!--Quality Meals-->
+            <div class="speciality flex flex-row gap-4 mb-10" id="quality-meals">
+                <div id="quality-meals-img"><img src="assets/Quality.svg"></div>
+                <div class="about-us-text flex flex-col gap-4">
+                    <div class="about-us-main-text text-xl font-medium">Quality Meals</div>
+                    <div class="about-us-sub-text md:w-3/4 opacity-50 text-sm text-justify">
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipiscing elit Ut et massa mi. 
+                        Aliquam in hendrerit urna.</div>
+                </div>
+            </div>
+            <!--Fast Delivery-->
+            <div class="speciality flex flex-row gap-4 mb-10" id="fast-delivery">
+                <div id="fast-delivery-img"><img src="assets/Delivery.svg"></div>
+                <div class="about-us-text flex flex-col gap-4">
+                    <div class="about-us-main-text text-xl font-medium">Fast Delivery</div>
+                    <div class="about-us-sub-text md:w-3/4 opacity-50 text-sm text-justify">
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipiscing elit Ut et massa mi. 
+                        Aliquam in hendrerit urna.</div>
+                </div>
+            </div>
+            <!--Authentic Ethiopian Dishes-->
+            <div class="speciality flex flex-row gap-4" id="authentic-ethiopian-dishes">
+                <div id="authentic-ethiopian-dishes-img"><img src="assets/cooking.svg"></div>
+                <div class="about-us-text flex flex-col gap-4 mb-10">
+                    <div class="about-us-main-text text-xl font-medium">Authentic Ethiopian Dishes</div>
+                    <div class="about-us-sub-text md:w-3/4 opacity-50 text-sm text-justify">
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipiscing elit Ut et massa mi. 
+                        Aliquam in hendrerit urna.</div>
+                </div>
+            </div>
+            <!--Vegan & Vegiterian-->
+            <div class="speciality flex flex-row gap-4" id="vegan">
+                <div id="vegan-img"><img src="assets/Green.svg"></div>
+                <div class="about-us-text flex flex-col gap-4 mb-10">
+                    <div class="about-us-main-text text-xl font-medium">Vegan & Vegiterian</div>
+                    <div class="about-us-sub-text md:w-3/4 opacity-50 text-sm text-justify">
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipiscing elit Ut et massa mi. 
+                        Aliquam in hendrerit urna.</div>
+                </div>
+            </div>
+            <!--Freshly Prepared-->
+            <div class="speciality flex flex-row gap-4" id="freshly-prepared">
+                <div id="freshly-prepared-img"><img src="assets/cart.svg"></div>
+                <div class="about-us-text flex flex-col gap-4">
+                    <div class="about-us-main-text text-xl font-medium">Freshly Prepared</div>
+                    <div class="about-us-sub-text md:w-3/4 opacity-50 text-sm text-justify">
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipiscing elit Ut et massa mi. 
+                        Aliquam in hendrerit urna.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of About-->
+
+    <!--Our Products-->
+    <div class="flex flex-col">
+        <!--Title-->
+        <div class="flex justify-center mt-20 text-5xl font-semibold max-md:text-2xl" id="about-title">
+            <p>Our<span class="yellow-text"> Products</span></p>
+        </div>
+        <!--Sub Text-->
+        <div class="flex justify-center mt-6 opacity-75" id="product-small-text">
+            <p>A meal for every <span class="yellow-text">taste</span> and <span class="yellow-text">choice</span></p>
+        </div>
+        <!--Products Container-->
+        <div class="flex snap-x snap-mandatory mb-10 gap-10 mx-20 mt-20 md:p-10 max-md:mb-4 max-md:mx-10 max-md:mt-10 max-md:p-4" id="product-container">
+            <!--Product 1-->
+            <div class="card flex flex-col gap-4 md:justify-center md:items-center md:pb-10 snap-start md:shrink-0 max-md:w-72 max-md:96 max-md:pb-6 rounded-lg" id="tibs">
+                <!--Food Image-->
+                <img src="assets/tibs.svg" class="food-img md:w-fit">
+                <!--Food Name-->
+                <p class="food-name flex self-center font-medium">Tibs <span class="amh-text"> - እንጀራጀራ</span></p>
+                <!--Rating Holder-->
+                <div class="type-rating-holder flex flex-row gap-10 max-md:mx-4 gap-4">
+                    <!--Type-->
+                    <div class="flex flex-row">
+                        <p class="type btn-text rounded-full w-fit px-8 py-2 text-sm font-medium">Meat</p>
+                    </div>
+                    <!--Rating-->
+                    <div class="rating flex flex-row">
+                        <img src="assets/Rating.svg">
+                        <p class="flex self-center">4.9</p>
+                    </div>
+                </div>
+                <!--Details-->
+                <p class="detail flex w-64 text-justify opacity-50 max-md:mx-4">
+                    Lorem ipsum dolor sit amet 
+                    consectetur adipiscing elit Ut et massa mi.
+                    Aliquam in hendrerit urna.</p>
+                    <!--Order button-->
+                <div class="order-btn rounded w-32 px-4 py-2 m-auto"><p class="btn-text flex justify-center font-medium">Order Now</p></div>
+            </div>
+            <!--Product 2-->
+            <div class="card flex flex-col gap-4 md:justify-center md:items-center md:pb-10 snap-start md:shrink-0 max-md:w-72 max-md:96 max-md:pb-6 rounded-lg" id="tibs">
+                <!--Food Image-->
+                <img src="assets/tibs.svg" class="food-img md:w-fit">
+                <!--Food Name-->
+                <p class="food-name flex self-center font-medium">Tibs <span class="amh-text"> - እንጀራጀራ</span></p>
+                <!--Rating Holder-->
+                <div class="type-rating-holder flex flex-row gap-10 max-md:mx-4 gap-4">
+                    <!--Type-->
+                    <div class="flex flex-row">
+                        <p class="type btn-text rounded-full w-fit px-8 py-2 text-sm font-medium">Meat</p>
+                    </div>
+                    <!--Rating-->
+                    <div class="rating flex flex-row">
+                        <img src="assets/Rating.svg">
+                        <p class="flex self-center">4.9</p>
+                    </div>
+                </div>
+                <!--Details-->
+                <p class="detail flex w-64 text-justify opacity-50 max-md:mx-4">
+                    Lorem ipsum dolor sit amet 
+                    consectetur adipiscing elit Ut et massa mi.
+                    Aliquam in hendrerit urna.</p>
+                    <!--Order button-->
+                <div class="order-btn rounded w-32 px-4 py-2 m-auto"><p class="btn-text flex justify-center font-medium">Order Now</p></div>
+            </div>
+            <!--Product 3-->
+            <div class="card flex flex-col gap-4 md:justify-center md:items-center md:pb-10 snap-start md:shrink-0 max-md:w-72 max-md:96 max-md:pb-6 rounded-lg" id="tibs">
+                <!--Food Image-->
+                <img src="assets/tibs.svg" class="food-img md:w-fit">
+                <!--Food Name-->
+                <p class="food-name flex self-center font-medium">Tibs <span class="amh-text"> - እንጀራጀራ</span></p>
+                <!--Rating Holder-->
+                <div class="type-rating-holder flex flex-row gap-10 max-md:mx-4 gap-4">
+                    <!--Type-->
+                    <div class="flex flex-row">
+                        <p class="type btn-text rounded-full w-fit px-8 py-2 text-sm font-medium">Meat</p>
+                    </div>
+                    <!--Rating-->
+                    <div class="rating flex flex-row">
+                        <img src="assets/Rating.svg">
+                        <p class="flex self-center">4.9</p>
+                    </div>
+                </div>
+                <!--Details-->
+                <p class="detail flex w-64 text-justify opacity-50 max-md:mx-4">
+                    Lorem ipsum dolor sit amet 
+                    consectetur adipiscing elit Ut et massa mi.
+                    Aliquam in hendrerit urna.</p>
+                    <!--Order button-->
+                <div class="order-btn rounded w-32 px-4 py-2 m-auto"><p class="btn-text flex justify-center font-medium">Order Now</p></div>
+            </div>
+            <!--Product 4-->
+            <div class="card flex flex-col gap-4 md:justify-center md:items-center md:pb-10 snap-start md:shrink-0 max-md:w-72 max-md:96 max-md:pb-6 rounded-lg" id="tibs">
+                <!--Food Image-->
+                <img src="assets/tibs.svg" class="food-img md:w-fit">
+                <!--Food Name-->
+                <p class="food-name flex self-center font-medium">Tibs <span class="amh-text"> - እንጀራጀራ</span></p>
+                <!--Rating Holder-->
+                <div class="type-rating-holder flex flex-row gap-10 max-md:mx-4 gap-4">
+                    <!--Type-->
+                    <div class="flex flex-row">
+                        <p class="type btn-text rounded-full w-fit px-8 py-2 text-sm font-medium">Meat</p>
+                    </div>
+                    <!--Rating-->
+                    <div class="rating flex flex-row">
+                        <img src="assets/Rating.svg">
+                        <p class="flex self-center">4.9</p>
+                    </div>
+                </div>
+                <!--Details-->
+                <p class="detail flex w-64 text-justify opacity-50 max-md:mx-4">
+                    Lorem ipsum dolor sit amet 
+                    consectetur adipiscing elit Ut et massa mi.
+                    Aliquam in hendrerit urna.</p>
+                    <!--Order button-->
+                <div class="order-btn rounded w-32 px-4 py-2 m-auto"><p class="btn-text flex justify-center font-medium">Order Now</p></div>
+            </div>
+            <!--Product 5-->
+            <div class="card flex flex-col gap-4 md:justify-center md:items-center md:pb-10 snap-start md:shrink-0 max-md:w-72 max-md:96 max-md:pb-6 rounded-lg" id="tibs">
+                <!--Food Image-->
+                <img src="assets/tibs.svg" class="food-img md:w-fit">
+                <!--Food Name-->
+                <p class="food-name flex self-center font-medium">Tibs <span class="amh-text"> - እንጀራጀራ</span></p>
+                <!--Rating Holder-->
+                <div class="type-rating-holder flex flex-row gap-10 max-md:mx-4 gap-4">
+                    <!--Type-->
+                    <div class="flex flex-row">
+                        <p class="type btn-text rounded-full w-fit px-8 py-2 text-sm font-medium">Meat</p>
+                    </div>
+                    <!--Rating-->
+                    <div class="rating flex flex-row">
+                        <img src="assets/Rating.svg">
+                        <p class="flex self-center">4.9</p>
+                    </div>
+                </div>
+                <!--Details-->
+                <p class="detail flex w-64 text-justify opacity-50 max-md:mx-4">
+                    Lorem ipsum dolor sit amet 
+                    consectetur adipiscing elit Ut et massa mi.
+                    Aliquam in hendrerit urna.</p>
+                    <!--Order button-->
+                <div class="order-btn rounded w-32 px-4 py-2 m-auto"><p class="btn-text flex justify-center font-medium">Order Now</p></div>
+            </div>
+            <!--Product 6-->
+            <div class="card flex flex-col gap-4 md:justify-center md:items-center md:pb-10 snap-start md:shrink-0 max-md:w-72 max-md:96 max-md:pb-6 rounded-lg" id="tibs">
+                <!--Food Image-->
+                <img src="assets/tibs.svg" class="food-img md:w-fit">
+                <!--Food Name-->
+                <p class="food-name flex self-center font-medium">Tibs <span class="amh-text"> - እንጀራጀራ</span></p>
+                <!--Rating Holder-->
+                <div class="type-rating-holder flex flex-row gap-10 max-md:mx-4 gap-4">
+                    <!--Type-->
+                    <div class="flex flex-row">
+                        <p class="type btn-text rounded-full w-fit px-8 py-2 text-sm font-medium">Meat</p>
+                    </div>
+                    <!--Rating-->
+                    <div class="rating flex flex-row">
+                        <img src="assets/Rating.svg">
+                        <p class="flex self-center">4.9</p>
+                    </div>
+                </div>
+                <!--Details-->
+                <p class="detail flex w-64 text-justify opacity-50 max-md:mx-4">
+                    Lorem ipsum dolor sit amet 
+                    consectetur adipiscing elit Ut et massa mi.
+                    Aliquam in hendrerit urna.</p>
+                    <!--Order button-->
+                <div class="order-btn rounded w-32 px-4 py-2 m-auto"><p class="btn-text flex justify-center font-medium">Order Now</p></div>
+            </div>
+            <!--Product 7-->
+            <div class="card flex flex-col gap-4 md:justify-center md:items-center md:pb-10 snap-start md:shrink-0 max-md:w-72 max-md:96 max-md:pb-6 rounded-lg" id="tibs">
+                <!--Food Image-->
+                <img src="assets/tibs.svg" class="food-img md:w-fit">
+                <!--Food Name-->
+                <p class="food-name flex self-center font-medium">Tibs <span class="amh-text"> - እንጀራጀራ</span></p>
+                <!--Rating Holder-->
+                <div class="type-rating-holder flex flex-row gap-10 max-md:mx-4 gap-4">
+                    <!--Type-->
+                    <div class="flex flex-row">
+                        <p class="type btn-text rounded-full w-fit px-8 py-2 text-sm font-medium">Meat</p>
+                    </div>
+                    <!--Rating-->
+                    <div class="rating flex flex-row">
+                        <img src="assets/Rating.svg">
+                        <p class="flex self-center">4.9</p>
+                    </div>
+                </div>
+                <!--Details-->
+                <p class="detail flex w-64 text-justify opacity-50 max-md:mx-4">
+                    Lorem ipsum dolor sit amet 
+                    consectetur adipiscing elit Ut et massa mi.
+                    Aliquam in hendrerit urna.</p>
+                    <!--Order button-->
+                <div class="order-btn rounded w-32 px-4 py-2 m-auto"><p class="btn-text flex justify-center font-medium">Order Now</p></div>
+            </div>
+            <!--Product 8-->
+            <div class="card flex flex-col gap-4 md:justify-center md:items-center md:pb-10 snap-start md:shrink-0 max-md:w-72 max-md:96 max-md:pb-6 rounded-lg" id="tibs">
+                <!--Food Image-->
+                <img src="assets/tibs.svg" class="food-img md:w-fit">
+                <!--Food Name-->
+                <p class="food-name flex self-center font-medium">Tibs <span class="amh-text"> - እንጀራጀራ</span></p>
+                <!--Rating Holder-->
+                <div class="type-rating-holder flex flex-row gap-10 max-md:mx-4 gap-4">
+                    <!--Type-->
+                    <div class="flex flex-row">
+                        <p class="type btn-text rounded-full w-fit px-8 py-2 text-sm font-medium">Meat</p>
+                    </div>
+                    <!--Rating-->
+                    <div class="rating flex flex-row">
+                        <img src="assets/Rating.svg">
+                        <p class="flex self-center">4.9</p>
+                    </div>
+                </div>
+                <!--Details-->
+                <p class="detail flex w-64 text-justify opacity-50 max-md:mx-4">
+                    Lorem ipsum dolor sit amet 
+                    consectetur adipiscing elit Ut et massa mi.
+                    Aliquam in hendrerit urna.</p>
+                    <!--Order button-->
+                <div class="order-btn rounded w-32 px-4 py-2 m-auto"><p class="btn-text flex justify-center font-medium">Order Now</p></div>
+            </div>
+        </div>
+    </div>
+    <!--End of Products-->
+    
+    <!--Testimonial-->
+    <div id="testimonial">
+        <div class="flex justify-center mt-20 text-5xl font-semibold max-md:text-2xl" id="testimonial-title">
+            <p>Our <span class="yellow-text">Customers</span> Feedback</p>
+        </div>
+        <div class="flex justify-center mt-6 opacity-75">
+            <p>A <span class="yellow-text">happy</span> customer is a <span class="yellow-text">happy </span>life</p>
+        </div>
+        <div class="max-md:hidden flex flex-row justify-center md:mx-20 mt-16 gap-20" id="testified-people">
+            <!--Person1-->
+            <div class="person flex flex-col gap-4 justify-center py-6 px-10 rounded-lg">
+                <img src="assets/person1.svg" class="profile">
+                <p class="review w-72 text-justify"><span class="yellow-text">"</span>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.<span class="yellow-text">”</span></p>
+                <p class="yellow-text name text-lg font-medium">Person 1</p>
+                <p class="profession opacity-50 text-xs">Profession 1</p>
+            </div>
+            <!--Person2-->
+            <div class="person flex flex-col gap-4 justify-center py-6 px-10 rounded-lg">
+                <img src="assets/person1.svg" class="profile">
+                <p class="review w-72 text-justify"><span class="yellow-text">"</span>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.<span class="yellow-text">”</span></p>
+                <p class="yellow-text name text-lg font-medium">Person 2</p>
+                <p class="profession opacity-50 text-xs">Profession 2</p>
+            </div>
+            <!--Person3-->
+            <div class="person flex flex-col gap-4 justify-center py-6 px-10 rounded-lg">
+                <img src="assets/person1.svg" class="profile">
+                <p class="review w-72 text-justify"><span class="yellow-text">"</span>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.<span class="yellow-text">”</span></p>
+                <p class="yellow-text name text-lg font-medium">Person 3</p>
+                <p class="profession opacity-50 text-xs">Profession 3</p>
+            </div>
+        </div>
+        <!--Mobile Testimonial-->
+    <div class="md:hidden flex snap-x snap-mandatory gap-6 py-10 px-10 mx-10 overflow-scroll">
+        <div class="snap-start shrink">
+            <div class="person flex flex-col gap-4 justify-center py-6 px-10 rounded-lg">
+                <img src="assets/person1.svg" class="profile">
+                <p class="review w-48 text-justify"><span class="yellow-text">"</span>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.<span class="yellow-text">”</span></p>
+                <p class="yellow-text name text-lg font-medium">Person 3</p>
+                <p class="profession opacity-50 text-xs">Profession 3</p>
+            </div>
+        </div>
+        <div class="snap-start shrink">
+            <div class="person flex flex-col gap-4 justify-center py-6 px-10 rounded-lg">
+                <img src="assets/person1.svg" class="profile">
+                <p class="review w-48 text-justify"><span class="yellow-text">"</span>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.<span class="yellow-text">”</span></p>
+                <p class="yellow-text name text-lg font-medium">Person 3</p>
+                <p class="profession opacity-50 text-xs">Profession 3</p>
+            </div>
+        </div>
+        <div class="snap-start shrink">
+            <div class="person flex flex-col gap-4 justify-center py-6 px-10 rounded-lg">
+                <img src="assets/person1.svg" class="profile">
+                <p class="review w-48 text-justify"><span class="yellow-text">"</span>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.<span class="yellow-text">”</span></p>
+                <p class="yellow-text name text-lg font-medium">Person 3</p>
+                <p class="profession opacity-50 text-xs">Profession 3</p>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+
+    <!--End of Testimonial-->
+
+    <!--Contact us-->
+    <div class="flex md:flex-row my-24 mx-20 gap-72 justify-evenly max-md:flex-col-reverse mx-6 mb-10">
+        <!--Left Side Contact-->
+        <div class="flex flex-col max-md:hidden"id="left-side-contact">
+            <div class="max-md:hidden flex text-5xl font-semibold" id="Contact-title">
+                <p>Get in <span class="yellow-text">touch</span></p>
+            </div>
+            <div class="max-md:hidden flex mt-6 opacity-75">
+                <p>Fill in the form or send us an email 📝</p>
+            </div>
+            <!--Phone-->
+            <div class="flex flex-row gap-6 mt-6"id="phone">
+                <div id="phone-img"><img src="assets/Phone.svg"></div>
+                <div class="flex justify-center" id="phone-num"><p class="flex self-center">+251  9-123-456-789</p></div>
+            </div>
+            <!--Email-->
+            <div class="flex flex-row gap-6 mt-6"id="email">
+                <div><img src="assets/email.svg"></div>
+                <div class="flex justify-center" id="email"><p class="flex self-center">something@gmail.com</p></div>
+            </div>
+            <p class="flex mt-20 text-2xl font-semibold mt-6">Follow us on</p>
+            <div class="flex flex-row gap-10 mt-6" id="socials">
+               <a href="#"><img src="assets/Facebook.svg"></a>
+                <a href="#"><img src="assets/Twitter.svg"> </a>
+                <a href="#"><img src="assets/Telegram.svg"></a>
+                <a href="#"><img src="assets/Whatsapp.svg"></a>
+                <a href="#"><img src="assets/Instagram.svg"></a>
+            </div>
+            <p class="opacity-50 text-xs mt-10">Mesob Foods © 2023 All rights reserved</p>
+        </div>
+        <!--Right Side Contact-->
+        <div class="max-md:flex flex-col" id="right-side-contact">
+            <div class="flex text-5xl font-semibold max-md:text-2xl justify-center" id="Contact-title">
+                <p>Get in <span class="yellow-text">touch</span></p>
+            </div>
+            <div class="flex mt-6 opacity-75 justify-center">
+                <p>Fill in the form or send us an email 📝</p>
+            </div>
+            <!--Form-->
+            <form class="flex flex-col gap-4 mt-6" id="form">
+                    <div class="flex md:flex-row md:gap-6 max-md:flex-col max-md:gap-4">
+                        <input type="text" class="input-box py-4 px-10" placeholder="Name"/>
+                        <input type="text" class="input-box py-4 px-10" placeholder="Email"/>
+                    </div>
+                    <div class="flex md:flex-row md:gap-6 max-md:flex-col max-md:gap-4">
+                        <input type="text" class="input-box py-4 px-10" placeholder="Phone"/>
+                        <select name="pets" class="input-box py-4 px-10 md:w-72 max-md:96 " id="pet-select">
+                            <option value="" disabled selected hidden>Choose a product</option>
+                            <option value="None">None</option>
+                            <option value="Tibs">Tibs</option>
+                            <option value="Shiro">Shiro</option>
+                            <option value="Injera">Injera</option>
+                            <option value="Gomen">Gomen</option>
+                            <option value="Alicha">Alicha</option>
+                            <option value="Firfir">Firfir</option>
+                        </select>
+                    </div>
+    
+                    
+                    <textarea class="input-box py-4 px-10 h-64" placeholder="Message"></textarea>
+                    <input type="submit" class="btn btn-text w-36 md:py-4 md:px-6 rounded-lg font-medium max-md:py-2 max-md:4" value="Submit" />
+            </form>
+            <div class="md:hidden flex flex-row gap-6 mt-6"id="phone">
+                    <div id="phone-img"><img src="assets/Phone.svg"></div>
+                    <div class="flex justify-center" id="phone-num"><p class="flex self-center">+251  9-123-456-789</p></div>
+            </div>
+                <!--Email-->
+            <div class="md:hidden flex flex-row gap-6 mt-6"id="email">
+                    <div><img src="assets/email.svg"></div>
+                    <div class="flex justify-center" id="email"><p class="flex self-center">something@gmail.com</p></div>
+            </div>
+            <p class="md:hidden flex mt-20 text-2xl font-semibold mt-6">Follow us on</p>
+            <div class="md:hidden flex flex-row md:gap-10 mt-6 max-md: gap-4" id="socials">
+            <a href="#"><img src="assets/Facebook.svg"></a>
+            <a href="#"><img src="assets/Twitter.svg"> </a>
+            <a href="#"><img src="assets/Telegram.svg"></a>
+            <a href="#"><img src="assets/Whatsapp.svg"></a>
+            <a href="#"><img src="assets/Instagram.svg"></a>
+            </div>
+            <p class="md:hidden opacity-50 text-xs mt-10">Mesob Foods © 2023 All rights reserved</p>
+            </div>
+        </div>
+    <!--End of Contact us-->
+
+    <!--Footer-->
+    <footer>
+        <div class="bg-[#FF9E00] flex justify-center py-4 max-md:text-xs">
+            <p class="text-white font-medium">Designed and Developed by <a href=""><span class=" text-white font-semibold hover:text-[#2e2e2e] ease-linear duration-300">Mohammed Ibrahim</span></a></p>
+        </div>
+        
+    </footer>
+    <!--Javascript-->
+    <script src="js/script.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>
