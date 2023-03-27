@@ -12,24 +12,33 @@
     <!--Navigation Bar-->
     <div class="relative">
         <header class="flex py-2 fixed z-50 top-0 left-0 right-0 md:justify-center backdrop-filter backdrop-blur-lg bg-opacity-80 border-b border-gray-200">
-            <nav class="">
+            <nav id="Navbar">
                 <ul class="max-md:hidden flex flex-row gap-16 justify-center">
-                    <li class="flex self-center text-lg"><a href="#">Home</a></li>
-                    <li class="flex self-center text-lg"><a href="#">About</a></li>
-                    <li class="flex self-center text-lg"><a href="#"><img src="assets/Logo.svg"></a></li>
-                    <li class="flex self-center text-lg"><a href="#">Product</a></li>
-                    <li class="flex self-center text-lg"><a href="#">Contact</a></li>
+                    <li class="flex self-center text-lg"><a href="javascript: scrollToCTA()">Home</a></li>
+                    <li class="flex self-center text-lg"><a href="javascript: scrollToAbout()">About</a></li>
+                    <li class="flex self-center text-lg"><a href="javascript: scrollToCTA()"><img src="assets/Logo.svg"></a></li>
+                    <li class="flex self-center text-lg"><a href="javascript: scrollToProduct()">Product</a></li>
+                    <li class="flex self-center text-lg"><a href="javascript: scrollToContact()">Contact</a></li>
                 </ul>
                 <!--Mobile version-->
-                <div class="md:hidden flex flex-row mx-6">
-                    <img src="assets/Logo.svg" class="w-1/2">
-                    <button id="menu-btn" class="block self-center ml-32 hamburger lg:hidden focus:outline-none">
-                        <span class="hamburger-top"></span>
-                        <span class="hamburger-middle"></span>
-                        <span class="hamburger-bottom"></span>
-                        </button>
+                <div class="md:hidden flex flex-row justify-between mx-6 ">
+                    <div>
+                        <img src="assets/Logo.svg" class="w-1/2">
+                    </div>
+                    <div class="flex justify-center relative">
+                        <img src="assets/iPhone 13-NavBar.svg" id="nav-btn">
+                    </div>
+                </div>
+                <div class="hidden flex justify-center" id="modal">
+                    <ul class="flex flex-col gap-4 text-lg text-center font-medium">
+                        <li><a href="javascript: scrollToCTA()">Home</a></li>
+                        <li><a href="javascript: scrollToAbout()">About</a></li>
+                        <li><a href="javascript: scrollToProduct()">Product</a></li>
+                        <li><a href="javascript: scrollToContact()">Contact</a></li>
+                    </ul>
                 </div>
             </nav>
+            </header>
     </div>
     
     <!--End of Navigation Bar-->
@@ -137,7 +146,7 @@
     <!--End of About-->
 
     <!--Our Products-->
-    <div class="flex flex-col">
+    <div class="flex flex-col" id="products">
         <!--Title-->
         <div class="flex justify-center mt-20 text-5xl font-semibold max-md:text-2xl" id="about-title">
             <p>Our<span class="yellow-text"> Products</span></p>
@@ -424,7 +433,7 @@
     <!--End of Testimonial-->
 
     <!--Contact us-->
-    <div class="flex md:flex-row my-24 mx-20 gap-72 justify-evenly max-md:flex-col-reverse mx-6 mb-10">
+    <div class="flex md:flex-row my-24 mx-20 gap-72 justify-evenly max-md:flex-col-reverse mx-6 mb-10" id="contact">
         <!--Left Side Contact-->
         <div class="flex flex-col max-md:hidden"id="left-side-contact">
             <div class="max-md:hidden flex text-5xl font-semibold" id="Contact-title">
@@ -486,21 +495,21 @@
                     <input type="submit" class="btn btn-text w-36 md:py-4 md:px-6 rounded-lg font-medium max-md:py-2 max-md:4" value="Submit" />
             </form>
             <div class="md:hidden flex flex-row gap-6 mt-6"id="phone">
-                    <div id="phone-img"><img src="assets/Phone.svg"></div>
+                    <div id="phone-img"><img src="assets/Phone.svg" class="w-[2px]"></div>
                     <div class="flex justify-center" id="phone-num"><p class="flex self-center">+251  9-123-456-789</p></div>
             </div>
                 <!--Email-->
             <div class="md:hidden flex flex-row gap-6 mt-6"id="email">
-                    <div><img src="assets/email.svg"></div>
+                    <div><img src="assets/email.svg" class="w-[2px]"></div>
                     <div class="flex justify-center" id="email"><p class="flex self-center">something@gmail.com</p></div>
             </div>
             <p class="md:hidden flex mt-20 text-2xl font-semibold mt-6">Follow us on</p>
             <div class="md:hidden flex flex-row md:gap-10 mt-6 max-md: gap-4" id="socials">
-            <a href="#"><img src="assets/Facebook.svg"></a>
-            <a href="#"><img src="assets/Twitter.svg"> </a>
-            <a href="#"><img src="assets/Telegram.svg"></a>
-            <a href="#"><img src="assets/Whatsapp.svg"></a>
-            <a href="#"><img src="assets/Instagram.svg"></a>
+            <a href="#"><img src="assets/Facebook.svg" class="w-[2px]"></a>
+            <a href="#"><img src="assets/Twitter.svg" class="w-[2px]"> </a>
+            <a href="#"><img src="assets/Telegram.svg" class="w-[2px]"></a>
+            <a href="#"><img src="assets/Whatsapp.svg" class="w-[2px]"></a>
+            <a href="#"><img src="assets/Instagram.svg" class="w-[2px]"></a>
             </div>
             <p class="md:hidden opacity-50 text-xs mt-10">Mesob Foods © 2023 All rights reserved</p>
             </div>
