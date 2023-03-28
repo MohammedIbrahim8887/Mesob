@@ -464,21 +464,22 @@
         </div>
         <!--Right Side Contact-->
         <div class="max-md:flex flex-col" id="right-side-contact">
-            <div class="flex text-5xl font-semibold max-md:text-2xl justify-center" id="Contact-title">
+            <div class="md:hidden flex text-5xl font-semibold max-md:text-2xl justify-center" id="Contact-title">
                 <p>Get in <span class="yellow-text">touch</span></p>
             </div>
-            <div class="flex mt-6 opacity-75 justify-center">
+            <div class="md:hidden flex mt-6 opacity-75 justify-center">
                 <p>Fill in the form or send us an email 📝</p>
             </div>
             <!--Form-->
-            <form class="flex flex-col gap-4 mt-6" id="form">
+            <form class="flex flex-col gap-4 mt-6" id="form" action="https://formsubmit.co/agentmame@gmail.com" method="POST" method="POST">
+                <input type="hidden" name="_gotcha" style="display:none !important">
                     <div class="flex md:flex-row md:gap-6 max-md:flex-col max-md:gap-4">
-                        <input type="text" class="input-box py-4 px-10" placeholder="Name"/>
-                        <input type="text" class="input-box py-4 px-10" placeholder="Email"/>
+                        <input type="text" name="name" class="input-box py-4 px-10" id="name" placeholder="Name" required/>
+                        <input type="text" name="email" class="input-box py-4 px-10" id="email" placeholder="Email" required/>
                     </div>
                     <div class="flex md:flex-row md:gap-6 max-md:flex-col max-md:gap-4">
-                        <input type="text" class="input-box py-4 px-10" placeholder="Phone"/>
-                        <select name="pets" class="input-box py-4 px-10 md:w-72 max-md:96 " id="pet-select">
+                        <input type="text" class="input-box py-4 px-10" name="phone" id="phone" placeholder="Phone(optional)"/>
+                        <select name="product" class="input-box py-4 px-10 md:w-72 max-md:96 " id="product-select" required>
                             <option value="" disabled selected hidden>Choose a product</option>
                             <option value="None">None</option>
                             <option value="Tibs">Tibs</option>
@@ -489,27 +490,25 @@
                             <option value="Firfir">Firfir</option>
                         </select>
                     </div>
-    
-                    
-                    <textarea class="input-box py-4 px-10 h-64" placeholder="Message"></textarea>
+                    <textarea class="input-box py-4 px-10 h-64 " id="message" name="message" placeholder="Message" required></textarea>
                     <input type="submit" class="btn btn-text w-36 md:py-4 md:px-6 rounded-lg font-medium max-md:py-2 max-md:4" value="Submit" />
             </form>
             <div class="md:hidden flex flex-row gap-6 mt-6"id="phone">
-                    <div id="phone-img"><img src="assets/Phone.svg" class="w-[2px]"></div>
+                    <div id="phone-img"><img src="assets/Phone.svg"></div>
                     <div class="flex justify-center" id="phone-num"><p class="flex self-center">+251  9-123-456-789</p></div>
             </div>
                 <!--Email-->
             <div class="md:hidden flex flex-row gap-6 mt-6"id="email">
-                    <div><img src="assets/email.svg" class="w-[2px]"></div>
+                    <div><img src="assets/email.svg"></div>
                     <div class="flex justify-center" id="email"><p class="flex self-center">something@gmail.com</p></div>
             </div>
             <p class="md:hidden flex mt-20 text-2xl font-semibold mt-6">Follow us on</p>
             <div class="md:hidden flex flex-row md:gap-10 mt-6 max-md: gap-4" id="socials">
-            <a href="#"><img src="assets/Facebook.svg" class="w-[2px]"></a>
-            <a href="#"><img src="assets/Twitter.svg" class="w-[2px]"> </a>
-            <a href="#"><img src="assets/Telegram.svg" class="w-[2px]"></a>
-            <a href="#"><img src="assets/Whatsapp.svg" class="w-[2px]"></a>
-            <a href="#"><img src="assets/Instagram.svg" class="w-[2px]"></a>
+            <a href="#"><img src="assets/Facebook.svg"></a>
+            <a href="#"><img src="assets/Twitter.svg"> </a>
+            <a href="#"><img src="assets/Telegram.svg"></a>
+            <a href="#"><img src="assets/Whatsapp.svg"></a>
+            <a href="#"><img src="assets/Instagram.svg"></a>
             </div>
             <p class="md:hidden opacity-50 text-xs mt-10">Mesob Foods © 2023 All rights reserved</p>
             </div>
