@@ -5,17 +5,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
-
-@import '@splidejs/splide/css';
-
-@import '@splidejs/splide/css/skyblue';
-@import '@splidejs/splide/css/sea-green';
-
-@import '@splidejs/splide/css/core';
 *{
     color:#2e2e2e;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
+header{
+    background: rgb(255, 255, 255);
+}
+
 .amh-text{
     font-family: 'Noto Sans Ethiopic', sans-serif;
 }
@@ -25,7 +23,7 @@ a{
 }
 
 .btn{
-    background-color: #FF9E00;
+    background-color: rgb(255, 158, 0);
 }
 
 .yellow-text{
