@@ -6,62 +6,56 @@ const products = document.getElementById("products");
 const testimonials = document.getElementById("testimonials");
 const contact = document.getElementById("contact");
 
-let isNavClicked  = false;
+let isNavClicked = false;
 
 //closes the modal
-function closeModal(){
+function closeModal() {
   nav_btn.src = "assets/iPhone 13-NavBar.svg";
-  modal.className = "hidden"; 
+  modal.className = "hidden";
   isNavClicked = false;
 }
 
-function openModal(){
+function openModal() {
   nav_btn.src = "assets/iPhone 13-X.svg";
   modal.className = "visible";
   isNavClicked = true;
 }
 
 //Controls about the Navigation Bar
-nav_btn.addEventListener("click",()=>{
-  if(!isNavClicked){
-      openModal();
-  }
-  else{      
-      closeModal();
+nav_btn.addEventListener("click", () => {
+  if (!isNavClicked) {
+    openModal();
+  } else {
+    closeModal();
   }
 });
 
 //Scroll to CTA
-function scrollToCTA(){
-  CTA.scrollIntoView({behavior:"smooth"},true);
-  setTimeout(closeModal,500)
-  
+function scrollToCTA() {
+  CTA.scrollIntoView({ behavior: "smooth" }, true);
+  setTimeout(closeModal, 500);
 }
 
 //Scroll to About
-function scrollToAbout(){
-  about.scrollIntoView({behavior:"smooth"},true);
-  setTimeout(closeModal,500)
-  
+function scrollToAbout() {
+  about.scrollIntoView({ behavior: "smooth" }, true);
+  setTimeout(closeModal, 500);
 }
 
 //Scroll to Products
-function scrollToProduct(){
-  products.scrollIntoView({behavior:"smooth"},true);
-  setTimeout(closeModal,500)
-  
+function scrollToProduct() {
+  products.scrollIntoView({ behavior: "smooth" }, true);
+  setTimeout(closeModal, 500);
 }
 
 //Scroll to Testimonials
-function scrollToTestimonials(){
-  testimonials.scrollIntoView({behavior:"smooth"},true);
-  setTimeout(closeModal,500)
-  
+function scrollToTestimonials() {
+  testimonials.scrollIntoView({ behavior: "smooth" }, true);
+  setTimeout(closeModal, 500);
 }
 
 //Scroll to Contact
-function scrollToContact(){
-  contact.scrollIntoView({behavior:"smooth"},true);
-  setTimeout(closeModal,500)
-  
+function scrollToContact() {
+  contact.scrollIntoView({ behavior: "smooth" }, true);
+  setTimeout(closeModal, 500);
 }
