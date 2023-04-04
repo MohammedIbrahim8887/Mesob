@@ -5,6 +5,7 @@ const about = document.getElementById("about");
 const products = document.getElementById("products");
 const testimonials = document.getElementById("testimonials");
 const contact = document.getElementById("contact");
+const header = document.getElementById("header");
 
 let isNavClicked = false;
 
@@ -59,3 +60,17 @@ function scrollToContact() {
   contact.scrollIntoView({ behavior: "smooth" }, true);
   setTimeout(closeModal, 500);
 }
+
+//Header scroll animation
+// Listen for the scroll event on the window object
+window.addEventListener("scroll", () => {
+  // Check if the user has scrolled past a certain point on the page
+  if (window.scrollY > 100) {
+    // Change 100 to the desired scroll threshold
+    // Add the drop-shadow filter to the element
+    header.style.filter = "drop-shadow(2px 2px 4px rgba(10, 50, 40, 0.5))";
+  } else {
+    // Remove the drop-shadow filter from the element
+    header.style.filter = "none";
+  }
+});
