@@ -271,6 +271,9 @@
           <span class="yellow-text">choice</span>
         </p>
       </div>
+      <div class="flex justify-center mt-6 opacity-50">
+        <p class="text-sm">Scroll to view all items</p>
+      </div>
       <!--Products Container-->
       <div
         class="flex snap-x snap-mandatory mb-10 gap-10 mx-20 mt-20 md:p-10 max-md:mb-4 max-md:mx-10 max-md:mt-10 max-md:p-4"
@@ -328,7 +331,7 @@
           <img src="assets/gomen.svg" class="food-img md:w-fit" />
           <!--Food Name-->
           <p class="food-name flex self-center font-medium">
-            Gomen <span class="amh-text"> - ጎመን</span>
+            Gomen with Meat <span class="amh-text"> - ጎመን በስጋ</span>
           </p>
           <!--Rating Holder-->
           <div
@@ -706,6 +709,50 @@
             >
           </div>
         </div>
+        <!--Product 11-->
+        <div
+          class="card flex flex-col gap-4 md:justify-center md:items-center md:pb-10 snap-start md:shrink-0 max-md:w-72 max-md:96 max-md:pb-6 rounded-lg"
+          id="tibs"
+        >
+          <!--Food Image-->
+          <img src="assets/tiramisu.svg" class="food-img md:w-fit" />
+          <!--Food Name-->
+          <p class="food-name flex self-center font-medium">
+            Tiramisu <span class="amh-text"> - ቲራሚሱ</span>
+          </p>
+          <!--Rating Holder-->
+          <div
+            class="type-rating-holder flex flex-row gap-10 max-md:mx-4 gap-4"
+          >
+            <!--Type-->
+            <div class="flex flex-row">
+              <p
+                class="type btn-text rounded-full w-fit px-8 py-2 text-sm font-medium"
+              >
+                Dessert
+              </p>
+            </div>
+            <!--Rating-->
+            <div class="rating flex flex-row">
+              <img src="assets/Rating.svg" />
+              <p class="flex self-center">4.9</p>
+            </div>
+          </div>
+          <!--Details-->
+          <p class="detail flex w-64 text-justify opacity-50 max-md:mx-4">
+            Tiramisu is a sweet Italian coffee-flavored dessert. It is made of
+            ladyfingers dipped in coffee, layered with a whipped mixture of
+            eggs, sugar, and mascarpone cheese, flavoured with cocoa.
+          </p>
+          <!--Order button-->
+          <div class="order-btn rounded w-32 px-4 py-2 m-auto">
+            <a href="javascript: scrollToContact()"
+              ><p class="btn-text flex justify-center font-medium">
+                Order Now
+              </p></a
+            >
+          </div>
+        </div>
       </div>
     </div>
     <!--End of Products-->
@@ -839,23 +886,27 @@
         <div class="flex flex-row gap-6 mt-6" id="phone">
           <div id="phone-img"><img src="assets/Phone.svg" /></div>
           <div class="flex justify-center" id="phone-num">
-            <p class="flex self-center">+251 9-123-456-789</p>
+            <p class="flex self-center">+351920137404 or +351910185511</p>
           </div>
         </div>
         <!--Email-->
         <div class="flex flex-row gap-6 mt-6" id="email">
           <div><img src="assets/email.svg" /></div>
           <div class="flex justify-center" id="email">
-            <p class="flex self-center">something@gmail.com</p>
+            <p class="flex self-center">pauldessie26@gmail.com</p>
           </div>
         </div>
         <p class="flex mt-20 text-2xl font-semibold mt-6">Follow us on</p>
         <div class="flex flex-row gap-10 mt-6" id="socials">
-          <a href="#"><img src="assets/Facebook.svg" /></a>
-          <a href="#"><img src="assets/Twitter.svg" /> </a>
-          <a href="#"><img src="assets/Telegram.svg" /></a>
-          <a href="#"><img src="assets/Whatsapp.svg" /></a>
-          <a href="#"><img src="assets/Instagram.svg" /></a>
+          <a href="https://www.facebook.com/asefu.genetu"
+            ><img src="assets/Facebook.svg"
+          /></a>
+          <a href="https://wa.me/message/ZT6Z62SANMSPH1"
+            ><img src="assets/Whatsapp.svg"
+          /></a>
+          <a href="https://instagram.com/mesoblisbon?igshid=OTJhZDVkZWE="
+            ><img src="assets/Instagram.svg"
+          /></a>
         </div>
         <p class="opacity-50 text-xs mt-10">
           Mesob Foods © 2023 All rights reserved
@@ -876,7 +927,7 @@
         <form
           class="flex flex-col gap-4 mt-6"
           id="form"
-          action="https://formsubmit.co/agentmame@gmail.com"
+          action="https://formsubmit.co/pauldessie26@gmail.com"
           method="POST"
           method="POST"
         >
@@ -924,7 +975,7 @@
               <option value="Tibs">Tibs</option>
               <option value="Shiro">Doro-Wot</option>
               <option value="Injera">Injera</option>
-              <option value="Gomen">Gomen</option>
+              <option value="Gomen with Meat">Gomen with Meat</option>
               <option value="Alicha">Qeqel</option>
               <option value="Firfir">Firfir</option>
               <option value="Eggs with Meat">Eggs with Meat</option>
@@ -949,14 +1000,14 @@
         <div class="md:hidden flex flex-row gap-6 mt-6" id="phone">
           <div id="phone-img"><img src="assets/Phone.svg" /></div>
           <div class="flex justify-center" id="phone-num">
-            <p class="flex self-center">+251 9-123-456-789</p>
+            <p class="flex self-center">+351920137404 or +351910185511</p>
           </div>
         </div>
         <!--Email-->
         <div class="md:hidden flex flex-row gap-6 mt-6" id="email">
           <div><img src="assets/email.svg" /></div>
           <div class="flex justify-center" id="email">
-            <p class="flex self-center">something@gmail.com</p>
+            <p class="flex self-center">pauldessie26@gmail.com</p>
           </div>
         </div>
         <p class="md:hidden flex mt-20 text-2xl font-semibold mt-6">
@@ -966,11 +1017,15 @@
           class="md:hidden flex flex-row md:gap-10 mt-6 max-md: gap-4"
           id="socials"
         >
-          <a href="#"><img src="assets/Facebook.svg" /></a>
-          <a href="#"><img src="assets/Twitter.svg" /> </a>
-          <a href="#"><img src="assets/Telegram.svg" /></a>
-          <a href="#"><img src="assets/Whatsapp.svg" /></a>
-          <a href="#"><img src="assets/Instagram.svg" /></a>
+          <a href="https://www.facebook.com/asefu.genetu"
+            ><img src="assets/Facebook.svg"
+          /></a>
+          <a href="https://wa.me/message/ZT6Z62SANMSPH1"
+            ><img src="assets/Whatsapp.svg"
+          /></a>
+          <a href="https://instagram.com/mesoblisbon?igshid=OTJhZDVkZWE="
+            ><img src="assets/Instagram.svg"
+          /></a>
         </div>
         <p class="md:hidden opacity-50 text-xs mt-10">
           Mesob Foods © 2023 All rights reserved

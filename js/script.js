@@ -17,7 +17,7 @@ function closeModal() {
 }
 
 function openModal() {
-  nav_btn.src = "assets/iPhone 13-X.svg";
+  nav_btn.src = "assets/iPhone 13-NavBar.svg";
   modal.className = "visible";
   isNavClicked = true;
 }
